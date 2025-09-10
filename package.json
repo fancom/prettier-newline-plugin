@@ -1,0 +1,32 @@
+{
+  "name": "prettier-new-line-plugin",
+  "version": "1.0.0",
+  "description": "Prettier plugin that adds newlines after function declarations",
+  "main": "index.js",
+  "keywords": [
+    "prettier",
+    "plugin",
+    "formatting",
+    "functions",
+    "newline"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "prettier": ">=2.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fancom/prettier-newline-plugin.git"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
