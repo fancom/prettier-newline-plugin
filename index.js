@@ -54,14 +54,11 @@ function transform(ast, text, options) {
     const isFunctionLike = 
       node.type === 'FunctionDeclaration' ||
       node.type === 'FunctionExpression' ||
-      node.type === 'ArrowFunctionExpression' ||
       node.type === 'MethodDefinition' ||
       (node.type === 'VariableDeclaration' && 
        node.declarations && 
        node.declarations.some(decl => 
-         decl.init && 
-         (decl.init.type === 'FunctionExpression' || 
-          decl.init.type === 'ArrowFunctionExpression')
+         decl.init &&  decl.init.type === 'FunctionExpression'
        ));
     
     if (isFunctionLike && parent && Array.isArray(parent[key])) {

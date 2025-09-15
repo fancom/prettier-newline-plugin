@@ -1,6 +1,6 @@
 {
-  "name": "prettier-new-line-plugin",
-  "version": "1.0.0",
+  "name": "prettier-newline-plugin",
+  "version": "1.0.1",
   "description": "Prettier plugin that adds newlines after function declarations",
   "main": "index.js",
   "keywords": [
